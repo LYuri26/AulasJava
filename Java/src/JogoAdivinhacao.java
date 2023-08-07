@@ -11,7 +11,7 @@ public class JogoAdivinhacao {
         int[] numerosSecretos = new int[5];
 
         // Gera os números secretos aleatoriamente e os armazena no array
-        // numerosSecretos
+        // numerosSecretos 
         for (int i = 0; i <5; i++) {
             numerosSecretos[i] = random.nextInt(10); // Gera um número aleatório entre 0 e 9
         }

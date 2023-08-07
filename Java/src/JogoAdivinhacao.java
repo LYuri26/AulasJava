@@ -8,22 +8,22 @@ public class JogoAdivinhacao {
         Random random = new Random(); // Cria um objeto Random para gerar números aleatórios
 
         // Inicializa o array para armazenar os números secretos
-        int[] numerosSecretos = new int[10];
+        int[] numerosSecretos = new int[5];
 
         // Gera os números secretos aleatoriamente e os armazena no array
         // numerosSecretos
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <5; i++) {
             numerosSecretos[i] = random.nextInt(10); // Gera um número aleatório entre 0 e 9
         }
 
         // Número máximo de tentativas permitidas
-        int tentativasMaximas = 5;
+        int tentativasMaximas = 7;
 
         // Variável para contar as tentativas feitas pelo jogador
         int tentativas = 0;
 
         // Array para controlar quais números já foram revelados pelo jogador
-        boolean[] numerosRevelados = new boolean[10];
+        boolean[] numerosRevelados = new boolean[5];
 
         // Mensagem de boas-vindas e instruções para o jogador
         System.out.println("Bem-vindo ao Jogo de Adivinhação!");
@@ -47,14 +47,14 @@ public class JogoAdivinhacao {
             }
 
             // Verifica se a tentativa acertou algum número e revela os números iguais
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i <5; i++) {
                 if (numerosSecretos[i] == tentativa) {
                     numerosRevelados[i] = true; // Marca o número como revelado no array numerosRevelados
                 }
             }
 
             // Exibe os números secretos com "_" para as casas não reveladas
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i <5; i++) {
                 if (numerosRevelados[i]) {
                     System.out.print(numerosSecretos[i]); // Exibe o número se estiver revelado
                 } else {
@@ -64,7 +64,7 @@ public class JogoAdivinhacao {
 
             // Verifica se a tentativa do jogador é igual a algum dos números secretos
             boolean acertouNumero = false;
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i <5; i++) {
                 if (numerosSecretos[i] == tentativa) {
                     acertouNumero = true;
                     break;
@@ -76,7 +76,7 @@ public class JogoAdivinhacao {
                 acertouTodos = true;
                 // Verifica se o jogador acertou todos os números secretos
                 acertouTodos = true;
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i <5; i++) {
                     if (!numerosRevelados[i]) {
                         acertouTodos = false;
                         break;
@@ -101,7 +101,7 @@ public class JogoAdivinhacao {
         System.out.println("Você esgotou todas as tentativas. Números secretos:");
 
         // Exibe os números secretos
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i <5; i++) {
             System.out.print(numerosSecretos[i]);
         }
 

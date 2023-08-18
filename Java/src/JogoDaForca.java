@@ -1,6 +1,3 @@
-package javafxexemplo;
-
-
 import java.util.Scanner;
 import java.util.Random;
 

@@ -1,7 +1,7 @@
 {
-    "java.project.sourcePaths": ["Aulasjava/JavaSQL/src"],
-    "java.project.outputPath": "Aulasjava/JavaSQL/bin",
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "/home/lenon/lib/**/*.jar"
+        "lib/**/*.jar"
     ]
 }

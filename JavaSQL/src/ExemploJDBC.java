@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class ExemploJDBC {
     public static void main(String[] args) {
-        String jdbcUrl = "jdbc:mysql://localhost:3306/agendamento";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/Agendamento";
         String username = "root";
         String password = "";
 

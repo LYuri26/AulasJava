@@ -32,7 +32,7 @@ public class BancoDeDados {
         criarTabela();
 
         try (Connection conn = DriverManager.getConnection(JDBC_URL, USER, PASSWORD);
-             PreparedStatement stmt = conn.prepareStatement("INSERT INTO animais(nome, idade, raca, tipo_animal) VALUES (?, ?, ?, ?)")) {
+    PreparedStatement stmt = conn.prepareStatement("INSERT INTO animais(nome, idade, raca, tipo_animal) VALUES (?, ?, ?, ?)")) {
 
             stmt.setString(1, animal.nome);
             stmt.setInt(2, animal.idade);

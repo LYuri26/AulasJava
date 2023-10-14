@@ -17,7 +17,7 @@ public class Aluno {
     private String email;
     private String turma;
     private String turno;
-
+    
     public Aluno() {
     }
 
@@ -47,5 +47,33 @@ public class Aluno {
 
     public String getSobrenome() {
         return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTurma() {
+        return turma;
+    }
+
+    public void setTurma(String turma) {
+        this.turma = turma;
+    }
+
+    public String getTurno() {
+        return turno;
+    }
+
+    public void setTurno(String turno) {
+        this.turno = turno;
     }
 }

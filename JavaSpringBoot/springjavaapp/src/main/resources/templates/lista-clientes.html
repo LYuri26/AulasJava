@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Clientes</title>
+  </head>
+
+  <body>
+    <h1>Lista de Clientes</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Data de Nascimento</th>
+          <th>Email</th>
+          <th>Estado</th>
+          <th>Opções</th>
+          <!-- Coluna para opções de editar e excluir -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="cliente : ${clientes}">
+          <td th:text="${cliente.id}"></td>
+          <td th:text="${cliente.nome}"></td>
+          <td th:text="${cliente.sobrenome}"></td>
+          <td th:text="${cliente.dataNascimento}"></td>
+          <td th:text="${cliente.email}"></td>
+          <td th:text="${cliente.estado}"></td>
+          <td>
+            <a th:href="@{'/edicao/' + ${cliente.id}}">Editar</a>
+            <a
+              th:href="@{'/exclusao/' + ${cliente.id}}"
+              onclick="return confirm('Deseja realmente excluir este cliente?');"
+              >Excluir</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

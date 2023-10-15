@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Cliente</title>
+</head>
+<body>
+    <h1>Excluir Cliente</h1>
+    <form method="get" th:action="@{'/clientes/exclusao/' + ${cliente.id}}">
+        <p>Tem certeza que deseja excluir o cliente <span th:text="${cliente.nome}"></span>?</p>
+        <input type="submit" value="Sim">
+    </form>
+    <a href="/clientes">Cancelar</a>
+</body>
+</html>

@@ -20,15 +20,13 @@ public class main {
         // Cria uma instância (objeto) da classe 'signo' para determinar o signo solar
         signo s = new signo();
 
-        // Cria uma instância (objeto) da classe 'semhernacaascendente' para determinar
-        // o signo ascendente
-        semhernacaascendente a = new semhernacaascendente();
+        // Cria uma instância (objeto) da classe 'ascendente' para determinar o signo ascendente
+        ascendente a = new ascendente();
 
         // Determina o signo solar usando o objeto 's' da classe 'signo'
         String signoSolar = s.determinarsigno(data);
 
-        // Determina o signo ascendente usando o objeto 'a' da classe
-        // 'semhernacaascendente'
+        // Determina o signo ascendente usando o objeto 'a' da classe 'ascendente'
         String signoascendente = a.determinarascendente(data, horaNascimento, horaNascerDoSol);
 
         // Verifica se os dados inseridos são válidos e imprime os resultados

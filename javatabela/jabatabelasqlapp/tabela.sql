@@ -1,4 +1,5 @@
 CREATE DATABASE brasileirao;
+
 USE brasileirao;
 
 CREATE TABLE times (

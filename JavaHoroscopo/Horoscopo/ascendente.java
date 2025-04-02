@@ -3,7 +3,8 @@ import java.time.format.DateTimeFormatter;
 
 public class ascendente {
 
-    // Método para determinar o ascendente com base na data de nascimento, hora de nascimento e hora do nascer do sol
+    // Método para determinar o ascendente com base na data de nascimento, hora de
+    // nascimento e hora do nascer do sol
     public String determinarascendente(String data, String horaNascimento, String horaNascerSol) {
 
         // Divide a data em partes usando o caractere '/'
@@ -11,7 +12,8 @@ public class ascendente {
         // Divide a hora de nascimento em partes usando o caractere ':'
         String[] partesHora = horaNascimento.split(":");
 
-        // Verifica se foram obtidas corretamente três partes na data e duas na hora de nascimento
+        // Verifica se foram obtidas corretamente três partes na data e duas na hora de
+        // nascimento
         if (partesData.length != 3 || partesHora.length != 2) {
             return "dados inválidos"; // Retorna uma mensagem de erro se os dados estiverem incorretos
         }
